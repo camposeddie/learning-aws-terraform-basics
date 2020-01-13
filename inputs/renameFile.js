@@ -4,7 +4,8 @@ const s3 = new aws.S3();
 const renameFile = require('./renameFileScript');
 
 //define S3 bucket name and file name
-const  BUCKET = "eddie-tutorial";                                       //figure out how to use as a variable instead of hardcoded into code
+const BUCKET = process.env.bucket_name;
+// const  BUCKET = "eddie-tutorial";                                       //figure out how to use as a variable instead of hardcoded into code
 const FILENAME = "test.txt";
 
 exports.handler = async function (event, context, callback) {

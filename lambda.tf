@@ -13,4 +13,10 @@ resource "aws_lambda_function" "test_lambda" {
   source_code_hash = "${filebase64sha256(var.lambda_zip_location)}"
   runtime          = "nodejs12.x"
 
+  environment {
+    variables = {
+      bucket_name = "${var.bucket_name}"
+    }
+  }
+
 }
