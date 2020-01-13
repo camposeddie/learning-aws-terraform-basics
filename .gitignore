@@ -1,0 +1,12 @@
+# Terraform files
+.terraform
+terraform.tfstate
+terraform.tfvars
+*.tfstate*
+
+#Outputs
+.nyc_output
+outputs
+
+#Modules
+node_modules

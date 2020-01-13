@@ -1,0 +1,22 @@
+{
+  "name": "eddie_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "renameFile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm run test"
+  },
+  "author": "Eddie Campos",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.600.0",
+    "test-report": "^1.1.2"
+  },
+  "devDependencies": {
+    "nyc": "^15.0.0"
+  }
+}
