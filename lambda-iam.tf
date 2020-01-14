@@ -11,7 +11,7 @@ resource "aws_iam_role_policy" "lambda_policy" {
   name = "lambda_policy"
   role = "${aws_iam_role.lambda_role.id}"
 
-  policy = "${data.template_file.lambda-policy-template.rendered}"                    //
+  policy = "${data.template_file.lambda-policy-template.rendered}" //
 }
 
 resource "aws_iam_role" "lambda_role" {

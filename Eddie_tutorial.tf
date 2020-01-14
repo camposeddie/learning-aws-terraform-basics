@@ -19,7 +19,7 @@ data "template_file" "bucket-policy-s3" {
   template = "${file("bucket_policy.json")}"
   vars = {
     lamda_role_arn = "${var.lamda_role_arn}"
-    bucket_name = "${var.bucket_name}"
+    bucket_name    = "${var.bucket_name}"
   }
 }
 
