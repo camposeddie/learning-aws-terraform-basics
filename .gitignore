@@ -10,3 +10,6 @@ outputs
 
 #Modules
 node_modules
+
+#Secure info
+ssh
