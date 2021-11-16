@@ -13,7 +13,7 @@
   "author": "Eddie Campos",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.600.0",
+    "aws-sdk": "^2.814.0",
     "test-report": "^1.1.2"
   },
   "devDependencies": {
